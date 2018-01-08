@@ -44,7 +44,7 @@ public class MyNounLoader implements ApplicationContextAware, MapLoader<Integer,
      */
     @Override
     public Map<Integer, Noun> loadAll(Collection<Integer> keys) {
-        Map<Integer, Noun> result = new HashMap<>();
+        Map<Integer, Noun> result = new HashMap<Integer, Noun>();
         for (Integer key : keys) {
             Noun noun = this.load(key);
             if (noun != null) {

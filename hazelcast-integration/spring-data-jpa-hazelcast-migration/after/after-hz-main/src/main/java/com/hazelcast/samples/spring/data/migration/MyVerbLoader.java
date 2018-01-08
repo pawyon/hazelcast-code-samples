@@ -44,7 +44,7 @@ public class MyVerbLoader implements ApplicationContextAware, MapLoader<Integer,
      */
     @Override
     public Map<Integer, Verb> loadAll(Collection<Integer> keys) {
-        Map<Integer, Verb> result = new HashMap<>();
+        Map<Integer, Verb> result = new HashMap<Integer, Verb>();
         for (Integer key : keys) {
             Verb verb = this.load(key);
             if (verb != null) {

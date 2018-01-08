@@ -60,7 +60,7 @@ public class DatabaseServiceTest {
     public void findNounIds() {
         Iterator<Integer> iterator = this.databaseService.findNounIds().iterator();
 
-        Set<Integer> results = new TreeSet<>();
+        Set<Integer> results = new TreeSet<Integer>();
         while (iterator.hasNext()) {
             results.add(iterator.next());
         }
@@ -72,7 +72,7 @@ public class DatabaseServiceTest {
     public void findVerbIds() {
         Iterator<Integer> iterator = this.databaseService.findVerbIds().iterator();
 
-        Set<Integer> results = new TreeSet<>();
+        Set<Integer> results = new TreeSet<Integer>();
         while (iterator.hasNext()) {
             results.add(iterator.next());
         }
